@@ -78,5 +78,10 @@ public class pecaDTO {
     public void setId_peca(int id_peca) {
         this.id_peca = id_peca;
     }
+
+    public void AlterarEstoque(pecaDTO objpeca) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'AlterarEstoque'");
+    }
     
 }
