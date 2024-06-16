@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
 
+
 /**
  *
  * @author andri
@@ -96,4 +97,24 @@ public class PecaDAO {
 
     } 
     
+    
+     public void ecluirPeca(pecaDTO objpecaDTO){
+        String sql = "delete from peca where id_peca = ? ";
+        conn = new ConexaoDAO().getConexao();
+        
+        try {
+            
+           
+            pstm.setInt(1, objpecaDTO.getId_peca());
+
+            
+            pstm.execute();
+            pstm.close();
+            
+        } catch (Exception erro) {
+            
+            JOptionPane.showMessageDialog(null, "PecaDAo excluir" + erro);
+        }
+        
+     }
 }

@@ -412,6 +412,10 @@ public class CadastrarPecaGUI extends javax.swing.JFrame {
 
     private void jButtonExluirItemTabelaCadastrarPecaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonExluirItemTabelaCadastrarPecaActionPerformed
         // TODO add your handling code here:
+        
+        EcluirPeca();
+        listarPecas();
+        
          
         if (TabelaPeca.getSelectedRow() != -1) {
             DefaultTableModel cadastroPecas = (DefaultTableModel) TabelaPeca.getModel();
@@ -605,7 +609,21 @@ public class CadastrarPecaGUI extends javax.swing.JFrame {
         
     }
     
-    
+    private void EcluirPeca(){
+        
+        int id_peca;
+        
+        id_peca = Integer.parseInt(txtpeca.getText());
+        
+        pecaDTO objpecadto = new pecaDTO();
+        objpecadto.setId_peca(id_peca);
+        
+        PecaDAO objpecadao = new PecaDAO();
+        
+        objpecadao.ecluirPeca(objpecadto);
+        
+        
+    }
     
     
 
