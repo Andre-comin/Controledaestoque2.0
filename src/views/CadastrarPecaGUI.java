@@ -414,7 +414,7 @@ public class CadastrarPecaGUI extends javax.swing.JFrame {
         // TODO add your handling code here:
         
         EcluirPeca();
-        listarPecas();
+       
         
          
         if (TabelaPeca.getSelectedRow() != -1) {
