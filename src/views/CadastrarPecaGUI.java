@@ -422,8 +422,11 @@ public class CadastrarPecaGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonExluirItemTabelaCadastrarPecaActionPerformed
 
     private void jButtonBaixarEstoqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBaixarEstoqueActionPerformed
-        // TODO add your handling code here:
+        
+// TODO add your handling code here:
         // Obter os valores dos campos de texto
+        listarPecas();
+        AlterarEstoque();
         String peca = txtPecaBaixarEstoque.getText();
         String quantidadeStr = txtQuantidadeBaixarEstoque.getText();
 
