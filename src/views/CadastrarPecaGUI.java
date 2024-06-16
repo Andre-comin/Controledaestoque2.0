@@ -189,13 +189,13 @@ public class CadastrarPecaGUI extends javax.swing.JFrame {
                                 .addComponent(jButtonBaixarEstoque)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(btnCarregarCampos))
-                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addComponent(txtpeca, javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(labelQuantidadeBaixarEstoque, javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(labelPecaBaixarEstoque, javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(txtPecaBaixarEstoque, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
-                                .addComponent(txtQuantidadeBaixarEstoque, javax.swing.GroupLayout.Alignment.LEADING)))))
+                                .addComponent(txtQuantidadeBaixarEstoque, javax.swing.GroupLayout.Alignment.LEADING))
+                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
