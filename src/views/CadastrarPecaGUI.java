@@ -585,7 +585,19 @@ public class CadastrarPecaGUI extends javax.swing.JFrame {
     private void AlterarEstoque(){
         int id_Peca;
         String peca, quantidade;
-        
+
+        id_Peca = Integer.parseInt(txtpeca.getText());
+        peca =  txtPecaBaixarEstoque.getText();
+        quantidade = txtQuantidadeBaixarEstoque.getText();
+
+        pecaDTO objpeca = new pecaDTO();
+
+        objpeca.setId_peca(id_Peca);
+        objpeca.setPeca(peca);
+        objpeca.setQuantidade(quantidade);
+
+        PecaDAO pecaDAO = new PecaDAO();
+        objpeca.AlterarEstoque(objpeca);
     }
     
     
