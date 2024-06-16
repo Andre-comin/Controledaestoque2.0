@@ -63,6 +63,8 @@ public class CadastrarPecaGUI extends javax.swing.JFrame {
         txtQuantidadeBaixarEstoque = new javax.swing.JTextField();
         jButtonBaixarEstoque = new javax.swing.JButton();
         btnCarregarCampos = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        txtpeca = new javax.swing.JTextField();
         jLabelQuantidadePecaCadastrarPeca = new javax.swing.JLabel();
         txtQuantidadePecaCadastrarPeca = new javax.swing.JTextField();
         jButtonPesquisarPeca = new javax.swing.JButton();
@@ -167,6 +169,10 @@ public class CadastrarPecaGUI extends javax.swing.JFrame {
             }
         });
 
+        jLabel3.setText("ID Peca");
+
+        txtpeca.setEditable(false);
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -183,11 +189,13 @@ public class CadastrarPecaGUI extends javax.swing.JFrame {
                                 .addComponent(jButtonBaixarEstoque)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(btnCarregarCampos))
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(labelQuantidadeBaixarEstoque)
-                                .addComponent(labelPecaBaixarEstoque)
-                                .addComponent(txtPecaBaixarEstoque, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
-                                .addComponent(txtQuantidadeBaixarEstoque)))))
+                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(txtpeca, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(labelQuantidadeBaixarEstoque, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(labelPecaBaixarEstoque, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(txtPecaBaixarEstoque, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
+                                .addComponent(txtQuantidadeBaixarEstoque, javax.swing.GroupLayout.Alignment.LEADING)))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -195,7 +203,11 @@ public class CadastrarPecaGUI extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(15, 15, 15)
                 .addComponent(jLabel2)
-                .addGap(18, 18, 18)
+                .addGap(17, 17, 17)
+                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(txtpeca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(labelPecaBaixarEstoque)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtPecaBaixarEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -203,7 +215,7 @@ public class CadastrarPecaGUI extends javax.swing.JFrame {
                 .addComponent(labelQuantidadeBaixarEstoque)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtQuantidadeBaixarEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
+                .addGap(27, 27, 27)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButtonBaixarEstoque)
                     .addComponent(btnCarregarCampos))
@@ -264,9 +276,9 @@ public class CadastrarPecaGUI extends javax.swing.JFrame {
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(txtIDPecaCadastrarPeca, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(txtQuantidadePecaCadastrarPeca, javax.swing.GroupLayout.PREFERRED_SIZE, 302, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(13, Short.MAX_VALUE))
+                .addGap(59, 59, 59))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -279,14 +291,11 @@ public class CadastrarPecaGUI extends javax.swing.JFrame {
                     .addComponent(txtNomePecaCadastrarPeca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtCodigoPecaCadastrarPeca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabelCodigoPecaCadastrarPeca))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtCodigoPecaCadastrarPeca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabelCodigoPecaCadastrarPeca))
+                        .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabelDescricaoPecaCadastrarPeca)
                             .addComponent(txtDescricaoPecaCadastrarPeca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -313,7 +322,10 @@ public class CadastrarPecaGUI extends javax.swing.JFrame {
                             .addComponent(jButtonExluirItemTabelaCadastrarPeca))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 272, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(8, 8, 8))))
+                        .addGap(8, 8, 8))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
         pack();
@@ -509,6 +521,7 @@ public class CadastrarPecaGUI extends javax.swing.JFrame {
     private javax.swing.JButton jButtonPesquisarPeca;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabelCadastrarPecaInserirSomenteNumero1;
     private javax.swing.JLabel jLabelCodigoPecaCadastrarPeca;
@@ -529,6 +542,7 @@ public class CadastrarPecaGUI extends javax.swing.JFrame {
     private javax.swing.JTextField txtPrecoPecaCadastrarPeca;
     private javax.swing.JTextField txtQuantidadeBaixarEstoque;
     private javax.swing.JTextField txtQuantidadePecaCadastrarPeca;
+    private javax.swing.JTextField txtpeca;
     // End of variables declaration//GEN-END:variables
 
     private void listarPecas() {
@@ -560,9 +574,15 @@ public class CadastrarPecaGUI extends javax.swing.JFrame {
     private void CarregarCapos(){
         int setar = TabelaPeca.getSelectedRow();
         
-        txtPecaBaixarEstoque.setText(TabelaPeca.getModel().getValueAt(setar, 0).toString());
-         txtQuantidadeBaixarEstoque.setText(TabelaPeca.getModel().getValueAt(setar, 5).toString());
-         
+        txtpeca.setText(TabelaPeca.getModel().getValueAt(setar, 0).toString());
+        txtQuantidadeBaixarEstoque.setText(TabelaPeca.getModel().getValueAt(setar, 5).toString());
+        txtPecaBaixarEstoque.setText(TabelaPeca.getModel().getValueAt(setar, 1).toString());
+    }
+    
+    private void AlterarEstoque(){
+        int id_Peca;
+        String peca, quantidade;
+        
     }
     
     
