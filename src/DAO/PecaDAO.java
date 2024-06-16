@@ -74,7 +74,7 @@ public class PecaDAO {
         return lista;
     }
 
-    public void AlterarPeca(pecaDTO objpecaDTO){
+    public void alterarpeca(pecaDTO objpecaDTO){
         String sql = " update tabela peca set QuantidadeEstoque = ?, Nome = ? where ID_Peca ";
         conn = new ConexaoDAO().getConexao();
         

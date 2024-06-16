@@ -595,9 +595,11 @@ public class CadastrarPecaGUI extends javax.swing.JFrame {
         objpeca.setId_peca(id_Peca);
         objpeca.setPeca(peca);
         objpeca.setQuantidade(quantidade);
-
-        PecaDAO pecaDAO = new PecaDAO();
-        objpeca.AlterarEstoque(objpeca);
+        
+        PecaDAO objpecadao = new PecaDAO();
+        
+        objpecadao.alterarpeca(objpeca);
+        
     }
     
     
