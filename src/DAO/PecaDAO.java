@@ -73,5 +73,27 @@ public class PecaDAO {
         
         return lista;
     }
+
+    public void AlterarPeca(pecaDTO objpecaDTO){
+        String sql = " update tabela peca set QuantidadeEstoque = ?, Nome = ? where ID_Peca ";
+        conn = new ConexaoDAO().getConexao();
+        
+        try {
+            
+            pstm = conn.prepareStatement(sql);
+            pstm.setString(1, objpecaDTO.getQuantidade());
+            pstm.setString(2, objpecaDTO.getPeca());
+            pstm.setInt(3, objpecaDTO.getId_peca());
+
+            
+            pstm.execute();
+            pstm.close();
+            
+        } catch (Exception erro) {
+            
+            JOptionPane.showMessageDialog(null, "PecaDAo alterar" + erro);
+        }
+
+    } 
     
 }

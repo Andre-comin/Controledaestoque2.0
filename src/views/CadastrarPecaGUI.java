@@ -353,6 +353,9 @@ public class CadastrarPecaGUI extends javax.swing.JFrame {
         txtCodigoPecaCadastrarPeca.setText("");
         txtDescricaoPecaCadastrarPeca.setText("");
         txtPrecoPecaCadastrarPeca.setText("");
+        txtpeca.setText("");
+        txtPecaBaixarEstoque.setText("");
+        txtQuantidadeBaixarEstoque.setText("");
 
     }//GEN-LAST:event_jButtonLimparCadastrarPecaActionPerformed
 
